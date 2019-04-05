@@ -1,0 +1,69 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="com.gottnext.gotnextoficial">
+
+    <uses-permission android:name="android.permission.INTERNET" />
+
+    <application
+        android:allowBackup="true"
+        android:icon="@drawable/gotnextprincipal"
+        android:label="GotNext"
+        android:roundIcon="@mipmap/ic_launcher_round"
+        android:supportsRtl="true"
+        android:theme="@style/AppTheme">
+        <activity
+            android:name=".Activity_Post"
+
+
+            android:theme="@style/AppTheme.NoActionBar">
+
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+
+        <activity android:name=".ProfileBar">
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value=".Activity_Post">
+            </meta-data>
+            <intent-filter>
+                <action android:name="android.intent.action.ProfileBar" />
+                <category android:name="android.intent.category.DEFAULT"></category>
+            </intent-filter>
+        </activity>
+        <activity android:name=".Riting">
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value=".Activity_Post">
+            </meta-data>
+            <intent-filter>
+                <action android:name="android.intent.action.Riting" />
+                <category android:name="android.intent.category.DEFAULT"></category>
+            </intent-filter>
+        </activity>
+        <activity android:name=".NewPost">
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value=".Activity_Post">
+            </meta-data>
+            <intent-filter>
+                <action android:name="android.intent.action.NewPost" />
+                <category android:name="android.intent.category.DEFAULT"></category>
+            </intent-filter>
+        </activity>
+        <activity android:name=".Event">
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value=".Activity_Post">
+            </meta-data>
+            <intent-filter>
+                <action android:name="android.intent.action.Event" />
+                <category android:name="android.intent.category.DEFAULT"></category>
+            </intent-filter>
+        </activity>
+    </application>
+
+</manifest>
